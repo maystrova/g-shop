@@ -1,64 +1,59 @@
 body {
-font-family: arial;
-background: white;
-padding: 0;
-margin: 0;
+	font-family: arial;
+	background: white;
+	padding: 0;
+	margin: 0;
+	background: white;
 }
 img {
 	max-width: 100%;
 }
 .container {
-    position: relative;
-    background: white;
-    margin: 0 auto;
-
+	position: relative;
+	margin: 0 auto;
+	max-width: 1000px;
 }
 .header {
-	
-	    }
-	    .header .logo {
-	    width: 100px;
-    margin-left: 100px;
+}
+.header .logo {
+	width: 100px;
+	max-height: 100px;
+	float: left;
 }
 .header .logo a {
 }
-
 .header .logo a img {
 }
 .header nav {
-float: right;
+	float: right;
 }
-
 .header nav ul {
 	list-style: none;
 	float: right;
-
+	padding: 0;
+	margin: 0;
 }
-
 .header nav ul li {
 	float: left;
 }
-
 .header nav ul li a {
-    text-decoration: none;
-    color: black;
-    text-transform: uppercase;
-    padding: 5px 20px;
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	padding: 0 20px;
+	line-height: 100px;
 }
-
 .header nav ul li a:hover {
 	line-height: 1;
-    display: inline-block;
-    color:#ffeb3b;
-    text-decoration:none;
-    cursor: pointer;
+	display: inline-block;
+	color: #ffeb3b;
+	text-decoration: none;
+	cursor: pointer;
 }
-
 .slideshow {
 	position: relative;
 	margin-bottom: 20px;
 }
-
 .slideshow ul {
 	margin: 0;
 	padding: 0;
@@ -66,65 +61,69 @@ float: right;
 }
 .slideshow ul li {
 	display: none;
-
+	transition: all 1s ease-out 0.5s;
 }
-
 .slideshow ul li .text {
-	    position: absolute;
-    padding: 200px;
-    text-align: center;
-    color: white;
-    text-transform: uppercase;
-    white-space: nowrap;
+	position: absolute;
+	padding: 300px 200px 0;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	white-space: nowrap;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
 }
 .slideshow ul li .text h2 {
 	font-size: 70px;
-    margin-bottom: px;
-    margin-top: auto;
-    margin-bottom: 0;
+	margin-bottom: px;
+	margin-top: auto;
+	margin-bottom: 0;
 }
-
 .slideshow ul li .text p {
-	    font-size: 20px;
-    line-height: 1.5;
+	font-size: 20px;
+	line-height: 1.5;
+	margin-bottom: 50px;
 }
 .slideshow ul li .text a {
-	    color: white;
-    border: 1px solid white;
-    text-decoration: none;
-    padding: 10px;
+	color: white;
+	border: 1px solid white;
+	text-decoration: none;
+	padding: 10px;
+	display: inline-block;
 }
-.slideshow ul li .text p a
-{    color: crimson;
-    text-decoration: none;}
-.slideshow ul li .text p a:hover{
+.slideshow ul li .text p a {
+	color: crimson;
+	text-decoration: none;
+}
+.slideshow ul li .text p a:hover {
 	text-decoration: underline;
 }
-	.slideshow ul li img {
-
+.slideshow ul li img {
 }
-.slideshow ul li.active{
-	display: block!important;
+.slideshow ul li.active {
+	display: block !important;
 }
 .slideshow .dots {
-	    position: absolute;
- 
-    bottom: 20px;
-    left: 45%;
+	position: absolute;
+	bottom: 20px;
+	left: 45%;
+	display: flex;
+	align-items: center;
 }
-
 .slideshow .dots i {
-    width: 5px;
-    height: 5px;
-    background: white;
-    margin-bottom: 10px;
-    border-radius: 100%;
-    cursor: pointer;
-    margin: 10px;
-    display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: transparent;
+	margin-bottom: 10px;
+	border-radius: 100%;
+	cursor: pointer;
+	margin: 10px;
+	display: inline-block;
+	box-shadow: 0 0 0 1px white;
 }
-.slideshow .dots i.active{
-	    width: 5px;
-    height: 5px;
+.slideshow .dots i.active {
+	width: 5px;
+	height: 5px;
 }
-
